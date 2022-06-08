@@ -9,19 +9,30 @@ package com.mycompany.operaciongenerico;
 public class OperacionGenerico {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        double suma = 0;
+        double resta = 0;
+        double multiplicacion = 0;
+        double division = 0;
         
-        Calculadora<Double> cal = new Calculadora<>();
-        cal.setPrimerV(21.1);
-        cal.setSegundoV(5.0);
+        Calculadora<Integer> cal = new Calculadora<Integer>(21, 5);
         
-        System.out.println("primer valor : "+cal.getPrimerV());
-        System.out.println("segundo valor : "+cal.getSegundoV());
-
-        System.out.println("");
+        //suma
+        suma = cal.calculadoraSuma();
+        System.out.println(suma);
         
-        //resultado a suma
-        cal.calculadoraSuma();
+        //resta
+        resta = cal.calculadoraResta();
+        System.out.println(resta);
+        
+        //multiplicacion
+        multiplicacion = cal.calculadoraMultiplicacion();
+        System.out.println(multiplicacion);
+        
+        //division
+        division = cal.calculadoraResta();
+        System.out.println(division);
+        
+        
         
         
         
