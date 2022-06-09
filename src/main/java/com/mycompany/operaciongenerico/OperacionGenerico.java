@@ -16,21 +16,25 @@ public class OperacionGenerico {
         
         Calculadora<Integer> cal = new Calculadora<Integer>(21, 5);
         
+        System.out.println("Valor A: 21");
+        System.out.println("Valor B: 5");
+        System.out.println("");
+        
         //suma
         suma = cal.calculadoraSuma();
-        System.out.println(suma);
+        System.out.println("suma: "+suma);
         
         //resta
         resta = cal.calculadoraResta();
-        System.out.println(resta);
+        System.out.println("resta: "+resta);
         
         //multiplicacion
         multiplicacion = cal.calculadoraMultiplicacion();
-        System.out.println(multiplicacion);
+        System.out.println("multieplicación: "+multiplicacion);
         
         //division
         division = cal.calculadoraResta();
-        System.out.println(division);
+        System.out.println("Division: " +division);
         
         
         
